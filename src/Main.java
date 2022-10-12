@@ -29,6 +29,10 @@ public class Main
         System.out.println("Enter width of rectangle: ");
         if (scan.hasNextDouble())
         {
+            area = length * width;
+            perimeter = (length*2) + width*2;
+            System.out.println("Your area is " + area);
+            System.out.println("Your perimeter is " + perimeter);
             width = scan.nextDouble();
             scan.nextLine();
         }
@@ -38,11 +42,8 @@ public class Main
             System.out.println("You said the temperature was " + trash );
             System.out.println("Run the program again and enter a valid temperature! " + trash );
         }
-        {
-            area = length * width;
-            perimeter = (length*2) + width*2;
-            System.out.println("Your area is " + area);
-            System.out.println("Your perimeter is " + perimeter);
-        }
+
+
+
     }
 }
